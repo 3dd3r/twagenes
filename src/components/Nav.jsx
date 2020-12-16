@@ -49,6 +49,22 @@ const NavStyles = styled.nav`
       color: var(--red);
     } */
   }
+  @media (max-width: 648px) {
+    --columns: 4
+    background-color: green;
+
+    li a {
+      font-size: 2rem;
+      margin-top: 5px;
+    }
+    ul {
+      margin-top: -50px;
+    }
+
+    h3 {
+      /* font-size: 2rem; */
+    }
+  }
 `;
 
 export default function Nav() {

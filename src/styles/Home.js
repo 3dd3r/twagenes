@@ -11,7 +11,10 @@ export const HomePageStyle = styled.div`
 
   .tagines {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .tagines div {
+    margin: 0 15px;
   }
 
   span {
@@ -28,5 +31,12 @@ export const HomePageStyle = styled.div`
 
   img {
     border-radius: 20px;
+  }
+
+  @media (max-width: 948px) {
+    .tagines {
+      /* background-color: red; */
+      display: grid;
+    }
   }
 `;

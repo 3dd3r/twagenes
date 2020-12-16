@@ -26,15 +26,15 @@ export default function HomePage({ data }) {
         <section className="tagines">
           <div>
             <h3>Beef tagines</h3>
-            <img width="250" src={taginePic[2].image.asset.fluid.src} alt="" />
+            <img width="" src={taginePic[2].image.asset.fluid.src} alt="" />
           </div>
           <div>
             <h3>Chicken tagines</h3>
-            <img width="250" src={taginePic[3].image.asset.fluid.src} alt="" />
+            <img width="" src={taginePic[3].image.asset.fluid.src} alt="" />
           </div>
           <div>
             <h3>Vegan tagines</h3>
-            <img width="250" src={taginePic[5].image.asset.fluid.src} alt="" />
+            <img width="" src={taginePic[5].image.asset.fluid.src} alt="" />
           </div>
         </section>
       </Link>

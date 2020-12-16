@@ -66,6 +66,14 @@ export default function OrderPage({ data }) {
             onChange={updateValue}
           />
         </fieldset>
+        <fieldset className="order">
+          <legend>Order</legend>
+          <TagineOrder
+            order={order}
+            removeFromOrder={removeFromOrder}
+            tagines={tagines}
+          />
+        </fieldset>
         <fieldset className="menu">
           <legend>Menu</legend>
           {tagines.map((tagine) => (
@@ -77,7 +85,7 @@ export default function OrderPage({ data }) {
                 alt={tagine.name}
               />
               <div>
-                <h2>{tagine.name}</h2>
+                <h3>{tagine.name}</h3>
               </div>
               <div>
                 {['S', 'M', 'L'].map((size) => (
@@ -99,14 +107,7 @@ export default function OrderPage({ data }) {
             </MenuItemStyles>
           ))}
         </fieldset>
-        <fieldset className="order">
-          <legend>Order</legend>
-          <TagineOrder
-            order={order}
-            removeFromOrder={removeFromOrder}
-            tagines={tagines}
-          />
-        </fieldset>
+
         <fieldset>
           <h3>
             Your Total is {formatCurrency(calculateOrderTotal(order, tagines))}

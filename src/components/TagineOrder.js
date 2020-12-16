@@ -12,7 +12,7 @@ export default function TagineOrder({ order, tagines, removeFromOrder }) {
         return (
           <MenuItemStyles key={`${singleOrder.id}-${index}`}>
             <Img fluid={tagine.image.asset.fluid} />
-            <h2>{tagine.name}</h2>
+            <h3>{tagine.name}</h3>
             <p>
               {formatCurrency(
                 calculTaginePrice(tagine.price, singleOrder.size)
